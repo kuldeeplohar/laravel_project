@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Kuldeep;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,6 @@ Route::get('/rishabh', function () {
 });
 
 Route::get('/anil',[Kuldeep::class , 'show']);
+
+
+Route::get('/category/create',[CategoryController::class , 'create']);
