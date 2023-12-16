@@ -224,7 +224,6 @@ php artisan make:seeder CategorySeeder
 
 php artisan db:seed
 php artisan db:seed --class=Category2Seeder
-
 Artisan is a Laravel CLI
 
 

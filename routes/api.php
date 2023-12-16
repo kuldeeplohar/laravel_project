@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::prefix('/k1')->group(function () {
+    Route::get('/pankaj', function () {
+        $name = 'pankaj';             // using view()   first way
+        return view('pankaj',['aaa'=>$name]);
+    });
+    Route::get('/kuldeep', function () {
+        $name = 'kuldeep';             // using view()   first way
+        return view('kuldeep',['aaa'=>$name]);
+    });
+});

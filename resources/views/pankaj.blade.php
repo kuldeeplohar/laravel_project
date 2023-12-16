@@ -21,7 +21,7 @@
         </style>
     </head>
     <body >
-      <h1 >welcome {{$user}} to kl view file</h1>
-      <h1 >welcome {{$key11}} to kl view file</h1>
+      <h1 >welcome {{$aaa}} to Pankaj view file</h1>
+      <h6 >{{$key11}}</h6>
     </body>
 </html>

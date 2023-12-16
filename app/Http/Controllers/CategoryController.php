@@ -14,7 +14,15 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        
+        $categoryModel = new Category();
+
+        // Call the non-static method on the instance
+        $categoryData = $categoryModel->getCategory();
+
+        // Perform other actions with the data
+      //  return view('your.view', ['categoryData' => $categoryData]);
+
+        return view('category.index',['dt'=>$categoryData]);
     }
 
     /**

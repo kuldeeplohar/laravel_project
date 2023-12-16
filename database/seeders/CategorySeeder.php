@@ -1,9 +1,11 @@
 <?php
 
 namespace Database\Seeders;
+
 use Illuminate\Support\Facades\DB;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
 
 class CategorySeeder extends Seeder
 {
@@ -20,6 +22,7 @@ class CategorySeeder extends Seeder
             'cat_name' => 'Home and applinces',
             'cat_name' => 'Electrical',
             'cat_name' => 'Toys',
+            'cat_name' => 'Tosdvsvsvsys',
           
         ]);
     }

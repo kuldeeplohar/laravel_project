@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
+    protected $table = 'categories';
     use HasFactory;
+
+    public function getCategory(){
+
+        return $this->all();
+        
+    }
+
 }
