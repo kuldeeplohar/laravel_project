@@ -17,15 +17,15 @@ class Faculties extends Model
 
     }
     protected $fillable = ['title','shortcode','status','id'];
-    public static function getAllFaculties($data)
-    {
-         // dd($data->all());
+        public static function getAllFaculties($data)
+        {
+            // dd($data->all());
 
-           $faculty = Faculties::create($data);
+            $faculty = Faculties::create($data);
 
-           return response()->json($faculty, 201);
+            return response()->json($faculty, 201);
 
-    }
+        }
 
     public static function updateFaculties($data)
     {
